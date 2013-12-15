@@ -1,0 +1,19 @@
+{
+  "name": "nwitch-excessive-caps",
+  "version": "0.0.1",
+  "description": "nwitch plugin for blocking screams",
+  "keywords": [
+    "nwitch",
+    "nwitch-plugin"
+  ],
+  "repository": "nwitch/nwitch-excessive-caps",
+  "license": "MIT",
+  "author": "Kenan Yildirim <kenan@kenany.me> (http://kenany.me/)",
+  "main": "index.js",
+  "dependencies": {
+    "caps-rate": "^1.0.2"
+  },
+  "peerDependencies": {
+    "nwitch": "^0.2.0"
+  }
+}
