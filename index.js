@@ -15,7 +15,9 @@ module.exports = function(NwitchPlugin) {
 
     client.addListener('message', function(from, to, message) {
       if (message.length > 5 && capsRate(message) >= 0.55) {
-        client.say('.timeout ' + from + ' 2');
+        var destination = to.charAt(0) === '#' ? to : from;
+        client.say(destination, '.timeout ' + from + ' 2');
+        client.say(destination, 'STOP SCREAMING ' + from + '!');
       }
     });
   }
