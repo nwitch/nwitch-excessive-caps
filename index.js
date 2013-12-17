@@ -13,17 +13,14 @@ module.exports = function(NwitchPlugin) {
       author: 'Kenan Yildirim'
     };
 
-    this.bot = bot;
-    this.client = client;
+    client.addListener('message', function(from, to, message) {
+      if (message.length > 5 && capsRate(message) >= 0.55) {
+        client.say('.timeout ' + from + ' 2');
+      }
+    });
   }
 
   inherits(Plugin, NwitchPlugin);
-
-  this.client.addListener('message', function(from, to, message) {
-    if (message.length > 5 && capsRate(message) >= 0.55) {
-      this.client.say('.timeout ' + from + ' 2');
-    }
-  });
 
   return Plugin;
 };
