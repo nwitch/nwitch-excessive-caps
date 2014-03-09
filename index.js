@@ -1,7 +1,7 @@
 var capsRate = require('caps-rate');
 
 function plugin() {
-  return function(irc){
+  return function(irc) {
     irc.on('message', function(evt) {
       var from = evt.from;
       var to = evt.to;
