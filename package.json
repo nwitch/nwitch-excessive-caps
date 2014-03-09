@@ -14,6 +14,6 @@
     "caps-rate": "^1.0.2"
   },
   "peerDependencies": {
-    "nwitch": "^0.2.0"
+    "nwitch": "^0.4.0"
   }
 }
