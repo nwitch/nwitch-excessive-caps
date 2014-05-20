@@ -12,8 +12,5 @@
   "main": "index.js",
   "dependencies": {
     "caps-rate": "^1.0.2"
-  },
-  "peerDependencies": {
-    "nwitch": "^0.4.0"
   }
 }
